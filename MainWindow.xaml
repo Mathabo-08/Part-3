@@ -6,12 +6,13 @@
         xmlns:local="clr-namespace:recipeApp_WPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-        <TextBlock Text="Main Menu" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"/>
-        <Button Content="Enter New Recipe Details" Click="EnterNewRecipe_Click" Height="30" />
-        <Button Content="Select a Recipe" Click="SelectRecipe_Click"  Height="30"/>
-        <Button Content="Filter Recipe" Click="Filter" Height="30"/>
-        <Button Content="Exit" Click="Exit_Click" Height="30" />
-    </StackPanel>
-   
+    <Grid Background="BlueViolet">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Background="Orange">
+            <TextBlock Text="Main Menu" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+            <Button Content="Enter New Recipe Details" Click="EnterNewRecipe_Click" Height="30" Background="Orange"/>
+            <Button Content="Select a Recipe" Click="SelectRecipe_Click"  Height="30" Background="Orange"/>
+            <Button Content="Filter Recipe" Click="Filter" Height="30" Background="Orange"/>
+            <Button Content="Exit" Click="Exit_Click" Height="30" Background="Orange" />
+        </StackPanel>
+    </Grid>
 </Window>
